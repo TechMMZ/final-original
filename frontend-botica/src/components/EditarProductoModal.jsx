@@ -2,6 +2,17 @@
 import React, { useState, useEffect } from 'react';
 
 const EditarProductoModal = ({ productoEditar, onClose, onProductoEditado }) => {
+
+    useEffect(() => {
+        // Bloquear scroll al abrir
+        document.body.style.overflow = 'hidden';
+
+        // Restaurar scroll al cerrar
+        return () => {
+            document.body.style.overflow = 'auto';
+        };
+    }, []);
+
     const [formData, setFormData] = useState({
         nombre: '',
         descripcion: '',

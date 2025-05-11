@@ -14,7 +14,7 @@ const DetalleVentaModal = ({ detalleVenta, onClose }) => {
     if (!detalleVenta) return null;
 
     return (
-        <div className="fixed inset-0 flex justify-center items-center bg-black bg-opacity-40 backdrop-blur-sm z-50">
+        <div className="fixed inset-0 bg-transparent backdrop-blur-sm flex items-center justify-center z-50">
             <div className="bg-white p-8 rounded-xl shadow-xl w-full max-w-2xl">
                 <h2 className="text-2xl font-bold mb-6 text-gray-800">🧾 Detalles de Venta</h2>
 

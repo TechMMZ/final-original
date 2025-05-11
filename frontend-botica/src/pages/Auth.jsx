@@ -41,7 +41,7 @@ function Auth() {
 
                 setTimeout(() => {
                     if (userRole === 'admin') {
-                        navigate('/dashboard-admin'); // Redirigir a la vista del admin
+                        navigate('/dashboard'); // Redirigir a la vista del admin
                     } else {
                         navigate('/dashboard'); // Redirigir a la vista del vendedor
                     }
